@@ -11,6 +11,8 @@
   --font-logo: 'Raleway', sans-serif;
   --font-family-primary: 'Roboto', sans-serif;
   --border-color-portfolio: #eeeeee;
+  --color-icon-regular-customer: #afb1b8;
+  --bgcolor-icon-features: #f5f4fa;
 }
 
 .list-reset {
@@ -93,6 +95,10 @@ img {
 /*Секція-герой-Студія*/
 .hero {
   background-color: var(--color-hero);
+  background-image: url(../images/bgimg.jpg);
+  margin: 0 auto;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
 }
 .hero-title {
   color: var(--color-white);
@@ -318,6 +324,7 @@ img {
   flex-direction: column;
   text-align: center;
 }
+
 .ourteam-list {
   display: flex;
   flex-basis: calc((100%-90px) / 4);
@@ -366,4 +373,51 @@ img {
   border-bottom: 1px solid var(--border-color-portfolio);
   border-right: 1px solid var(--border-color-portfolio);
   border-left: 1px solid var(--border-color-portfolio);
+}
+.customers-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1230px;
+}
+.regular-customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-basis: calc((100%-150px) / 6);
+  /* flex-wrap: wrap; */
+}
+.regular-customers-title {
+  font-weight: 700px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.regular-customer-item {
+  display: flex;
+  flex-basis: calc((100%-150px) / 6);
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon-regular-customer);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icon-regular-customer);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.regular-customer-item:hover {
+  fill: var(--color-accent);
+}
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bgcolor-icon-features);
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
