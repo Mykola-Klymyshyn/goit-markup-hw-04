@@ -11,7 +11,7 @@
   --font-logo: 'Raleway', sans-serif;
   --font-family-primary: 'Roboto', sans-serif;
   --border-color-portfolio: #eeeeee;
-  --color-icon-regular-customer: #afb1b8;
+  --color-icon: #afb1b8;
   --bgcolor-icon-features: #f5f4fa;
 }
 
@@ -97,8 +97,7 @@ img {
   background-color: var(--color-hero);
   background-image: url(../images/bgimg.jpg);
   margin: 0 auto;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
+  background-repeat: no-repeat;
 }
 .hero-title {
   color: var(--color-white);
@@ -336,7 +335,7 @@ img {
   margin: 30px auto;
 }
 .footer-flex {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 .logo-f {
@@ -381,16 +380,23 @@ img {
   align-items: center;
   max-width: 1230px;
 }
+/* HW4 */
+.contact-list {
+  display: flex;
+  gap: 10px;
+}
+.contact-list:hover,
+:focus {
+  fill: var(--color-accent);
+}
 .regular-customers {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   flex-basis: calc((100%-150px) / 6);
-  /* flex-wrap: wrap; */
 }
 .regular-customers-title {
-  font-weight: 700px;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
@@ -401,15 +407,16 @@ img {
   flex-basis: calc((100%-150px) / 6);
   justify-content: center;
   align-items: center;
-  fill: var(--color-icon-regular-customer);
+  fill: var(--color-icon);
   width: 170px;
   height: 92px;
-  border: 1px solid var(--color-icon-regular-customer);
+  border: 1px solid var(--color-icon);
   border-radius: 4px;
   cursor: pointer;
 }
 .regular-customer-item:hover {
   fill: var(--color-accent);
+  border-color: var(--color-accent);
 }
 .features-icon {
   display: flex;
@@ -420,4 +427,48 @@ img {
   background-color: var(--bgcolor-icon-features);
   margin-bottom: 30px;
   border-radius: 4px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-title {
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--color-icon);
+}
+.team-link:hover,
+:focus {
+  fill: var(--color-white);
+  background-color: var(--color-accent);
 }
