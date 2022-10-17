@@ -75,9 +75,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-.menu-link:hover,
-.menu-link:focus {
+.menu-link.current {
+  color: var(--color-accent);
+}
+.menu .menu-link:hover,
+.menu .menu-link:focus {
   color: var(--color-accent);
 }
 .contact-link {
