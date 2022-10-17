@@ -86,6 +86,7 @@ img {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  font-weight: 500;
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.14;
