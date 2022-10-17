@@ -315,7 +315,7 @@ img {
 }
 .features-flex {
   display: flex;
-  flex-basis: calc((100%-90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
 }
 .features-list {
   display: flex;
@@ -325,7 +325,7 @@ img {
 .specific-flex {
   display: flex;
   flex-direction: column;
-  flex-basis: calc((100%-60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .specifics-list {
   display: flex;
@@ -340,7 +340,7 @@ img {
 
 .ourteam-list {
   display: flex;
-  flex-basis: calc((100%-90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
@@ -380,7 +380,7 @@ img {
 
 .portfolio-list {
   display: flex;
-  flex-basis: calc((100%-60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -422,7 +422,7 @@ img {
 }
 .regular-customer-item {
   display: flex;
-  flex-basis: calc((100%-150px) / 6);
+  flex-basis: calc((100% - 150px) / 6);
   justify-content: center;
   align-items: center;
   width: 170px;
