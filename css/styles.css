@@ -343,11 +343,14 @@ img {
   margin-top: 50px;
 }
 .card-text-position {
-  margin: 30px auto;
+  margin: 30px auto 16px;
 }
 .footer-flex {
   display: inline-flex;
   flex-direction: column;
+  width: 230px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .logo-f {
   margin-top: 60px;
@@ -455,12 +458,11 @@ img {
 .social-footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: left;
+  width: 236px;
+  margin-left: 0px;
 }
 .social-title {
   display: flex;
-
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -475,6 +477,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .social-footer-link {
   display: flex;
