@@ -440,26 +440,49 @@ img {
   margin-bottom: 30px;
   border-radius: 4px;
 }
-.container-position {
+.parrent-position {
   display: flex;
   align-items: baseline;
+  gap: 70px;
 }
 .social-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
 }
 .social-title {
+  display: flex;
+
+  font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
+  color: var(--color-white);
+  margin-bottom: 20px;
 }
-.social-footer-links {
+.social-footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--color-white);
+}
+.social-footer-link:hover,
+:focus {
+  background-color: var(--color-accent);
 }
 .team-social {
   display: flex;
