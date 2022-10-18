@@ -218,8 +218,8 @@ img {
   line-height: 1.6;
   letter-spacing: 0.03em;
   border: none;
-  border-radius: 4px;
   padding: 6px 22px;
+  border-radius: 4px;
 }
 .portfolio-radio-btn:hover,
 .portfolio-radio-btn:focus {
